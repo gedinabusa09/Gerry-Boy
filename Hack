@@ -1,0 +1,55 @@
+import time
+import random
+
+def simulate_hack():
+    print("Initiating hack...")
+    time.sleep(2)
+    print("Accessing mainframe...")
+    time.sleep(2)
+    print("Bypassing firewall...")
+    time.sleep(2)
+    print("Cracking encryption...")
+    time.sleep(2)
+    print("...")
+    time.sleep(1)
+    print("...")
+    time.sleep(1)
+    print("Access granted! System compromised.")
+    time.sleep(1)
+    print("Displaying confidential data:")
+
+    # Simulate random characters appearing
+    for _ in range(20):
+        print(''.join(random.choice('0123456789abcdef') for _ in range(32)))
+        time.sleep(0.2)
+
+def prank():
+    print("Initializing prank...")
+    time.sleep(2)
+    print("Prank initiated! Get ready for a simulated hack!")
+    time.sleep(1)
+    simulate_hack()
+
+prank()
+
+
+import time
+import webbrowser
+
+def open_browser_with_url(url):
+    webbrowser.open(url)
+
+def prank():
+    print("Initializing prank...")
+    time.sleep(2)
+    print("Prank initiated! Opening a lot of browser tabs...")
+    time.sleep(1)
+    urls = [
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",  # Feel free to change URLs
+        "https://www.reddit.com/r/aww",
+        "https://en.wikipedia.org/wiki/Special:Random"
+    ]
+    for url in urls:
+        open_browser_with_url(url)
+
+prank()
